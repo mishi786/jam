@@ -13,7 +13,7 @@ try:
 except ImportError:
     os.system('pip2 install requests')
     os.system('pip2 install mechanize')
-    os.system('python2 hop.py')
+    os.system('python2 mishi.py')
 
 #Browser Setting
 reload(sys)
@@ -21,6 +21,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 8.1.0; Chrome/79.0.3945.116) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36')]
 br.addheaders = [('user-agent','Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
 
 def exit():
@@ -55,21 +56,19 @@ def hamza(z):
 		
 ##### LOGO #####
 banner = """
-            _______    _______ 
-|\     /|  (  ___  )  (  ____ )
-| )   ( |  | (   ) |  | (    )|
-| (___) |  | |   | |  | (____)|
-|  ___  |  | |   | |  |  _____)
-| (   ) |  | |   | |  | (      
-| )   ( |  | (___) |  | )      
-|/     \|  (_______)  |/ 
+  __  __ _____  _____ _    _ _____ 
+ |  \/  |_   _|/ ____| |  | |_   _|
+ | \  / | | | | (___ | |__| | | |  
+ | |\/| | | |  \___ \|  __  | | |  
+ | |  | |_| |_ ____) | |  | |_| |_ 
+ |_|  |_|_____|_____/|_|  |_|_____|
                                  
 -----------------------------------------------
 
-➣ Coder   : Muhammad Hamza
-➣ Github  : https://github.com/Hamzahash
-➣ Facebook: Muhammad Hamza
-➣ Youtube : HOP Anonymous
+➣ Coder   : MISHAL KHAN MISHI
+➣ Github  : https://github.com/MISHI
+➣ Facebook: MISHAL KHAN MISHI
+➣ Youtube : JAM SHAHRUKH TECHNICAL
 
 -----------------------------------------------"""
 back = 0
@@ -87,7 +86,7 @@ def menu2():
 		os.system('clear')
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 		time.sleep(1)
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
@@ -98,7 +97,7 @@ def menu2():
 		os.system('clear')
 		print"[!] Account Is On Checkpoint"
 		os.system('rm -rf login.txt')
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 		time.sleep(1)
 	except requests.exceptions.ConnectionError:
 		print"[!] No Connection"
@@ -130,7 +129,7 @@ def menu2_menu():
         hamza('Please Wait.')
         hamza('While Is Returning To Main Menu.')
         time.sleep(1)
-        os.system('python2 .hop2.py')
+        os.system('python2 jam.py')
     else:
         print "[!] Wrong Input."
         menu2_menu()
@@ -145,7 +144,7 @@ def choice1():
 		print("[!] Token invalid")
 		os.system("rm -rf login.txt")
 		time.sleep(1)
-		os.system("python2 hop.py")
+		os.system("python2 mishi.py")
 	os.system("clear")
 	print banner
 	print ("[1] Crack From Friend List.")
@@ -336,7 +335,7 @@ def choice2():
 		print("[!] Token invalid")
 		os.system("rm -rf login.txt")
 		time.sleep(1)
-		os.system("python2 hop.py")
+		os.system("python2 mishi.py")
 	os.system("clear")
 	print banner
 	print ("[1] Crack From Friend List.")
