@@ -13,7 +13,7 @@ try:
 except ImportError:
     os.system('pip2 install requests')
     os.system('pip2 install mechanize')
-    os.system('python2 hop.py')
+    os.system('python2 mishi.py')
 
 #Browser Setting
 reload(sys)
@@ -21,6 +21,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 8.1.0; Chrome/79.0.3945.116) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36')]
 br.addheaders = [('user-agent','Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
 
 def exit():
@@ -53,21 +54,19 @@ def hamza(z):
 		time.sleep(0.03)
 ##### LOGO #####
 banner = """
-            _______    _______ 
-|\     /|  (  ___  )  (  ____ )
-| )   ( |  | (   ) |  | (    )|
-| (___) |  | |   | |  | (____)|
-|  ___  |  | |   | |  |  _____)
-| (   ) |  | |   | |  | (      
-| )   ( |  | (___) |  | )      
-|/     \|  (_______)  |/ 
+  __  __ _____  _____ _    _ _____ 
+ |  \/  |_   _|/ ____| |  | |_   _|
+ | \  / | | | | (___ | |__| | | |  
+ | |\/| | | |  \___ \|  __  | | |  
+ | |  | |_| |_ ____) | |  | |_| |_ 
+ |_|  |_|_____|_____/|_|  |_|_____| 
                                  
 -----------------------------------------------
 
-➣ Coder   : Muhammad Hamza
-➣ Github  : https://github.com/Hamzahash
-➣ Facebook: Muhammad Hamza
-➣ Youtube : HOP Anonymous
+➣ Coder   : MISHAL KHAN MISHI
+➣ Github  : https://github.com/MISHI
+➣ Facebook: MISHAL KHAN MISHI
+➣ Youtube : JAM SHAHRUKH TECHNICAL
 
 -----------------------------------------------"""
 # titik #
@@ -83,7 +82,7 @@ def tlogin():
 	os.system('clear')
 	print banner
 	username = raw_input("[+] TOOL USERNAME: ")
-	if username =="hamza":
+	if username =="mishi":
 	    os.system('clear')
 	    print banner
 	    print "[✓] TOOL USERNAME: "+username+ " (correct)"
@@ -93,7 +92,7 @@ def tlogin():
 	    tlogin()
 	    
 	passw = raw_input("[+] TOOL PASSWORD: ")
-	if passw =="1626":
+	if passw =="mishi":
 	    os.system('clear')
 	    print banner
 	    print "[✓] TOOL USERNAME: " +username+ " (correct)"
@@ -105,7 +104,7 @@ def tlogin():
 	    tlogin()
 	try:
 		toket = open('login.txt','r')
-		os.system('python2 .hop2.py')
+		os.system('python2 jam.py')
 	except (KeyError,IOError):
 		methodlogin()
 	else:
@@ -139,8 +138,8 @@ def methodlogin():
 		hopa.close()
 		print "\n[✓] Logged In Successfully."
 		time.sleep(1)
-		os.system('xdg-open https://www.youtube.com/channel/UCPRlRzOAEH8mcB1WtXf4Q1w')
-		os.system('python2 .hop2.py')
+		os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
+		os.system('python2 jam.py')
 		
 	elif hos =="0":
 		exit()
@@ -151,7 +150,7 @@ def login():
 	os.system("clear")
 	try:
 		tb=open('login.txt', 'r')
-		os.system("python2 .hop2.py")
+		os.system("python2 jam.py")
 	except (KeyError,IOError):
 		os.system("clear")
 		print (banner)
@@ -171,9 +170,9 @@ def login():
 		    st.close()
 		    print "\n[✓] Logged In Successfully."
 		    time.sleep(1)
-		    os.system('xdg-open https://www.youtube.com/channel/UCPRlRzOAEH8mcB1WtXf4Q1w')
+		    os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
 		    os.system("clear")
-		    os.system("python2 .hop2.py")
+		    os.system("python2 jam.py")
 		else:
 		    if "www.facebook.com" in z["error_msg"]:
 		        print ('[!] User Must Verify Account Before Login.')
