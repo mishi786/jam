@@ -59,10 +59,12 @@ banner = """
 \x1b[1;94m██╗░░██║██╔══██║██║╚██╔╝██║
 \x1b[1;94m╚█████╔╝██║░░██║██║░╚═╝░██║
 \x1b[1;94m░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝
-\033[1;97m╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗
-\033[1;97m║\033[0;36m* \033[0;36mOwner   \033[1;36m : \033[1;31mJAM-SHAHRUKH_\033[1;97m║
-\033[1;97m║\033[0;36m* \033[1;33mGitHub  \033[1;33m : \033[1;33m\033[4mhttps://Github.com/JAM\033[0m \033[1;97m║
-\033[1;97m╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝"""
+\033[1;97m=======================================
+\033[1;91mOwNeR  \033[1;93m: \033[1;94mJAM SHAHRUKH X MISHAL KHAN
+\033[1;91mYouTube \033[1;93m: \033[1;94mJAM SHAHRUKH TECHNICAL
+\033[1;91mGitHub  \033[1;93m: \033[1;94mhttps://github.com/MISHI786
+\033[1;91mGang \033[1;93m: \033[1;94mTHARKI GANG
+\033[1;97m======================================="""
 # titik #
 def tik():
 	titik = [".   ","..  ","... "]
@@ -86,7 +88,7 @@ def tlogin():
 	    tlogin()
 	    
 	passw = raw_input("[+] TOOL PASSWORD: ")
-	if passw =="jam":
+	if passw =="mishi":
 	    os.system('clear')
 	    print banner
 	    print "[✓] TOOL USERNAME: " +username+ " (correct)"
@@ -152,7 +154,7 @@ def login():
 	except (KeyError,IOError):
 		os.system("clear")
 		print (banner)
-		hamza('[!] JAM X MUSKAN BRAND')
+		hamza('[!] JAM X MISHI BRAND')
 		hamza('[!] Use a New Facebook Account To Login')
 		print'-------------------------------------'
 		iid=raw_input('[+] Number/Email: ')
