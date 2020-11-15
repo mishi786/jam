@@ -60,10 +60,9 @@ banner = """
 \x1b[1;94m╚█████╔╝██║░░██║██║░╚═╝░██║
 \x1b[1;94m░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝
 \033[1;97m=======================================
-\033[1;91mOwNeR  \033[1;93m: \033[1;94mJAM SHAHRUKH X MISHAL KHAN
+\033[1;91mOwNeR  \033[1;93m: \033[1;94mJAM SHAHRUKH
 \033[1;91mYouTube \033[1;93m: \033[1;94mJAM SHAHRUKH TECHNICAL
-\033[1;91mGitHub  \033[1;93m: \033[1;94mhttps://github.com/MISHI786
-\033[1;91mGang \033[1;93m: \033[1;94mTHARKI GANG
+\033[1;91mGitHub  \033[1;93m: \033[1;94mhttps://github.com/jam
 \033[1;97m======================================="""
 # titik #
 def tik():
@@ -88,7 +87,7 @@ def tlogin():
 	    tlogin()
 	    
 	passw = raw_input("[+] TOOL PASSWORD: ")
-	if passw =="mishi":
+	if passw =="jam":
 	    os.system('clear')
 	    print banner
 	    print "[✓] TOOL USERNAME: " +username+ " (correct)"
